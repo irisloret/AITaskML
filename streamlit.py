@@ -26,7 +26,7 @@ with EDA:
     st.write("This dataset includes data from people from Mexico, Peru and Colombia.")
     with st.expander(":blue[Shape]", expanded=False):
         st.text("I will start by showing the number of rows and columns.")
-        df = pd.read_csv('../Tasks/ObesityDataSet_raw_and_data_sinthetic.csv')
+        df = pd.read_csv('./ObesityDataSet.csv')
         st.write(df.shape)
         st.text("This number means that there are 2111 instances and 17 attributes.")
     with st.expander(":blue[First and last 5 lines of code]", expanded=False):
