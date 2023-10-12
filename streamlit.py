@@ -79,6 +79,9 @@ with MLA:
     plt.xlabel("Predicted")
     plt.ylabel("Actual")
     col3, col4 = st.columns(2)
+    ax.set_yticklabels(df['NObeyesdad'].unique(), rotation=0)
+    ax.set_xticklabels(df['NObeyesdad'].unique(), rotation=90)
+    
     col3.pyplot(fig)
 st.header("Conclusion")
 st.write("To conclude we can see that in most cases AdaBoost is the worst algorithm and Random Forest is the best.")
